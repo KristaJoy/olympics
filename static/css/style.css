@@ -1,0 +1,50 @@
+body {
+  padding: 0;
+  margin: 0;
+  height:100%
+}
+
+h1 {
+  text-align: center;
+  color: #2b5c97
+}
+
+h3 {
+  font-weight: 400;
+  font-size: small;
+}
+
+text {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  size: 100%;
+}
+
+.jumbotron {
+  height:300px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  background-position: center;
+  background-size: cover;
+
+}
+
+#map {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 8px;
+  height: 600px;
+  width: 100%; 
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
