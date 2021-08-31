@@ -701,7 +701,7 @@
     },
     {
         "city": "Rio de Janeiro",
-        "closing_ceremony": "5 August 2016",
+        "closing_ceremony": "21 August 2016",
         "continent": "America",
         "country": "Brazil",
         "index": 50,
@@ -709,13 +709,13 @@
         "latlng": "-22.897593769344486, -43.197068220526475",
         "lng": "-43.19706",
         "location": "Rio de Janeiro, Brazil",
-        "opening_ceremony": "21 August 2016",
+        "opening_ceremony": "5 August 2016",
         "season": "Summer",
         "year": 2016
     },
     {
         "city": "Pyeongchang",
-        "closing_ceremony": "9 February 2018",
+        "closing_ceremony": "25 February 2018",
         "continent": "Asia",
         "country": "South Korea",
         "index": 51,
@@ -723,13 +723,13 @@
         "latlng": "37.65926755136607, 128.69433378505758",
         "lng": "128.694333",
         "location": "Pyeongchang, South Korea",
-        "opening_ceremony": "25 February 2018",
+        "opening_ceremony": "9 February 2018",
         "season": "Winter",
         "year": 2018
     },
     {
         "city": "Tokyo",
-        "closing_ceremony": "23 July 2021",
+        "closing_ceremony": "8 August 2021",
         "continent": "Asia",
         "country": "Japan",
         "index": 52,
@@ -737,7 +737,7 @@
         "latlng": "35.68748119735823, 139.7545185234562",
         "lng": "139.75451",
         "location": "Tokyo, Japan",
-        "opening_ceremony": "8 August 2021",
+        "opening_ceremony": "23 July 2021",
         "season": "Summer",
         "year": 2020
     }

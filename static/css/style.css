@@ -16,28 +16,58 @@ body {
   transform: translatex(-50%);
 }
 
+.active {
+  font-weight: bolder;
+  background-color: #fff;
+  outline:#dad9e0 solid 2px; 
+}
+
 hr {
   border: 10px;
   display:block;
   width: 95%;               
-  background-color:#c7c6cc;
+  background-color:#dad9e0;
   height: 2px;
 }
 
 h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 4.5vw;
   color: #0081c8
 }
 
 h2 {
+  text-align: center;
   font-weight: 400;
   font-size: 28px;
-  color:#7f7f83;
+  color:#77777a;
 }
 
-text {
+h3 {
   text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: #0081c8
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  text-align: center;
+  font-size: 10px;
+  color:#77777a;
+}
+
+h6 {
+  font-weight:normal;
+  font-size: 12px;
+}
+
+p {
+  text-align: center;
+  font-size: 2vw;
 }
 
 .center {
@@ -45,19 +75,15 @@ text {
   margin-left: auto;
   margin-right: auto;
   size: 100%;
+  padding-bottom: 5px;
 }
 
 #map {
   position: relative;
   border: 1px solid black;
   border-radius: 8px;
-  height: 600px;
+  height: 800px;
   width: 100%; 
-}
-
-svg {
-  display: block;
-  margin: auto;
 }
 
 #legend {
@@ -74,3 +100,8 @@ select {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+svg {
+  display: block;
+  margin: auto;
+} 

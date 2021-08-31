@@ -65,8 +65,8 @@ d3.json('medals.json').then((importedData) => {
   function createPie(data) {
   
     // set the dimensions and margins of the graph
-    var width = 450
-        height = 450
+    var width = 400
+        height = 400
         margin = 40
   
     // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
@@ -79,6 +79,7 @@ d3.json('medals.json').then((importedData) => {
         .attr("height", height)
       .append("g")
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+        
   
     // set the color scale
     var color = d3.scaleOrdinal()
@@ -91,7 +92,7 @@ d3.json('medals.json').then((importedData) => {
       
     var data_ready = pie(d3.entries(data))
     var arcGenerator = d3.arc()
-      .innerRadius(75)
+      .innerRadius(50)
       .outerRadius(radius)
       .cornerRadius(9)
   
@@ -129,8 +130,8 @@ d3.json('medals.json').then((importedData) => {
   function createPie2(data) {
   
     // set the dimensions and margins of the graph
-    var width = 450
-        height = 450
+    var width = 400
+        height = 400
         margin = 40
   
     var radius = Math.min(width, height) / 2 - margin
@@ -146,7 +147,7 @@ d3.json('medals.json').then((importedData) => {
     // set the color scale
     var color = d3.scaleOrdinal()
       .domain(data)
-      .range(["#4880c4", "#cd364e", "#FBB130"])
+      .range(["#4980C4", "#ee334e", "#fcb131"])
   
     // Compute the position of each group on the pie:
     var pie = d3.pie()
@@ -154,7 +155,7 @@ d3.json('medals.json').then((importedData) => {
       
     var data_ready = pie(d3.entries(data))
     var arcGenerator = d3.arc()
-      .innerRadius(75)
+      .innerRadius(50)
       .outerRadius(radius)
       .cornerRadius(9)
   

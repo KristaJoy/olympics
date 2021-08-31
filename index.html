@@ -18,72 +18,83 @@
 
 <body>
       
-    <div class="container-fluid">
+  <div class="container-fluid">
 
-      <!-- logo header -->
-      <div class="row">
-        <div class="col-md-1"></div>
-          <div class="col-md-10">
-            <img src="/static/images/OlympicLogo.svg" alt="olympic rings" class="center" style="padding:20px;width:400px">
-            <h1>2020 Olympics Dashboard</h1>
-          </div>
-        <div class="col-md-1"></div>
-      </div>
+    <!-- logo header -->
+    <div class="row">
+      <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <img src="/static/images/OlympicLogo.svg" alt="olympic rings" class="center" style="padding:20px;width:360px">
+          <h1>Olympic Games: Summer 2020</h1>
+          <p>Hosted in Tokyo, Japan from July 23 – August 8, 2021</p>
+        </div>
+      <div class="col-md-1"></div>
+    </div>
 
     <!-- navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #eeeef0;">
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav navbar-center">
-          <a class="nav-item nav-link active" href="/">Dashboard <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="/map">Host Cities Map</a>
+          <a class="nav-item nav-link active" href="index.html">Dashboard <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="map.html">Host Cities Map</a>
         </div>
       </div>
     </nav>
 
-  <!-- KJ's Charts -->
-      <div class="row">
-  
-        <hr>
-        <div class="col-md-1"></div>
+    <!-- Bar Chart -->
+    <hr style="background-color:white">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <h2>Top 10 Countries by Medal Count</h2>
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+
+    <!-- Pie Charts -->
+    <div class="row">
+      <hr>
+      <div class="col-md-1"></div>
         <div class="col-md-2">
           <div class="dropdown">
-            <h5>Country:</h5>
+            <h4>View by Country:</h4>
             <select id="selCountry" onchange="optionChanged(this.value)"></select>
           </div>
           <img src="static/Images/legend.jpg" id="legend">
           <br>
-          <p><i>Note: Counts are by athlete, not by event.</i></p>
+          <h6><i>Note: Counts are by athlete, not by event.</i></h6>
         </div>
         <div class="col-md-4">
-          <center><h2>Athlete Medals</h2></center>
+          <h2>Athlete Medals</h2>
           <div id="pie1"></div>
         </div>
         <div class="col-md-4">
-          <center><h2>Medals by Gender</h2></center>
+          <h2>Medals by Gender</h2>
           <div id="pie2"></div>
         </div>
         <div class="col-md-1"></div>
       </div>
-  
-    <!-- Resources -->
-    <script src="https://d3js.org/d3.v5.min.js"></script>   
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-    crossorigin=""></script>
-    <!-- <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script> -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
-  
-  
-    <!-- JS key -->
-    <script src="static/hostsMap.js"></script>
-    <script src="hostsData.json"></script>
-    <script src="static/pie.js"></script>
-    <script src="medals.json"></script>
+    </div>
 
+    <!-- Footer -->
+    <div class="col-md-12">
+      <hr>
+      <h5>View code on <a href="https://github.com/KristaJoy/olympics">Github.</a>  </h5>
+    </div>
 
+  </div>
+  
+  <!-- Resources -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>   
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+         
+  <!-- JS key -->
+  <script src="static/hostsMap.js"></script>
+  <script src="hostsData.json"></script>
+  <script src="static/pie.js"></script>
+  <script src="medals.json"></script>
+  <script src="static/bar.js"></script>
     
 </body>
   

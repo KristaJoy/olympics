@@ -1,5 +1,5 @@
-// var styleURL = "kj19blue/ckrffsois0yi817k00rvowaqb";
-// var token = "pk.eyJ1Ijoia2oxOWJsdWUiLCJhIjoiY2txeTA2YzdnMTNwNDJ1bW5rdWR4em41aSJ9.0nXYtRwfjxFt66vN_FA8sA"
+var styleURL = "kj19blue/ckrffsois0yi817k00rvowaqb";
+var token = "pk.eyJ1Ijoia2oxOWJsdWUiLCJhIjoiY2txeTA2YzdnMTNwNDJ1bW5rdWR4em41aSJ9.0nXYtRwfjxFt66vN_FA8sA"
 
 // Add a tile layer
 var customMap = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/512/{z}/{x}/{y}?access_token={accessToken}", {
@@ -45,12 +45,12 @@ d3.json('hostsData.json').then((importedData) => {
   for (var i = 0; i < hosts.length; i++) {
     if (hosts[i].season == "Summer") {
       summerMarkers.push (
-        L.marker([hosts[i].lat, hosts[i].lng], {icon: SummerIcon}).bindPopup("<img src='static/Images/OlympicLogo.png' class=\"center\"><h1>" + hosts[i].city + "</h1> <hr> <h3>Opening Ceremony: " + hosts[i].opening_ceremony + "</h3><h3>Closing Ceremony: " + hosts[i].closing_ceremony + "</h3>")
+        L.marker([hosts[i].lat, hosts[i].lng], {icon: SummerIcon}).bindPopup("<img src='static/Images/OlympicLogo.png' class=\"center\"><h3>" + hosts[i].city + "</h3> <hr> <h4>Opening Ceremony: " + hosts[i].opening_ceremony + "</h4><h4>Closing Ceremony: " + hosts[i].closing_ceremony + "</h4>")
         );
     }
     else {
       winterMarkers.push (
-        L.marker([hosts[i].lat, hosts[i].lng], {icon: WinterIcon}).bindPopup("<img  src='static/Images/OlympicLogo.png' class=\"center\"><h1>" + hosts[i].city + "</h1> <hr> <h3>Opening Ceremony: " + hosts[i].opening_ceremony + "</h3><h3>Closing Ceremony: " + hosts[i].closing_ceremony + "</h3>")
+        L.marker([hosts[i].lat, hosts[i].lng], {icon: WinterIcon}).bindPopup("<img  src='static/Images/OlympicLogo.png' class=\"center\"><h3>" + hosts[i].city + "</h3> <hr> <h4>Opening Ceremony: " + hosts[i].opening_ceremony + "</h4><h4>Closing Ceremony: " + hosts[i].closing_ceremony + "</h4>")
         );
     }
 
@@ -68,7 +68,8 @@ d3.json('hostsData.json').then((importedData) => {
   // Create a map object
   var myMap = L.map("map", {
     center: [40, -5],
-    zoom: 2,
+    zoom: 2.5,
+    zoomSnap: 0.25,
     layers: [customMap, winter, summer]
   });
 
