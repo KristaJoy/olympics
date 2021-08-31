@@ -188,10 +188,12 @@ d3.json('medals.json').then((importedData) => {
   }
   
   
-  
+  // Select the drop down menu
+  d3.selectAll("#selCountry").on("change", optionChanged);
+
   // Create a function for the change event
-      
   function optionChanged() {
+    
     var dropdownMenu = d3.select("#selCountry").node();
     // Assign the dropdown menu option to a variable
     var selectedOption = dropdownMenu.value;

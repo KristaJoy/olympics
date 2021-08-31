@@ -1,17 +1,39 @@
+/* blue #4980C4
+yellow #fcb131
+green #00a651
+red #ee334e */
+
+
 body {
   padding: 0;
   margin: 0;
-  height:100%
+  height:100%;
+}
+
+.navbar-nav.navbar-center {
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+hr {
+  border: 10px;
+  display:block;
+  width: 95%;               
+  background-color:#c7c6cc;
+  height: 2px;
 }
 
 h1 {
   text-align: center;
-  color: #2b5c97
+  font-size: 40px;
+  color: #0081c8
 }
 
-h3 {
+h2 {
   font-weight: 400;
-  font-size: small;
+  font-size: 28px;
+  color:#7f7f83;
 }
 
 text {
@@ -25,17 +47,6 @@ text {
   size: 100%;
 }
 
-.jumbotron {
-  height:300px;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  padding-top: 20%;
-  padding-bottom: 20%;
-  background-position: center;
-  background-size: cover;
-
-}
-
 #map {
   position: relative;
   border: 1px solid black;
@@ -47,4 +58,19 @@ text {
 svg {
   display: block;
   margin: auto;
+}
+
+#legend {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+select {
+  background-color: #fcefd9;
+}
+
+#selCountry {
+  color: #000;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }

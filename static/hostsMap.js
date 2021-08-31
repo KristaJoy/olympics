@@ -1,5 +1,5 @@
-var styleURL = "kj19blue/ckrffsois0yi817k00rvowaqb";
-var token = "pk.eyJ1Ijoia2oxOWJsdWUiLCJhIjoiY2txeTA2YzdnMTNwNDJ1bW5rdWR4em41aSJ9.0nXYtRwfjxFt66vN_FA8sA"
+// var styleURL = "kj19blue/ckrffsois0yi817k00rvowaqb";
+// var token = "pk.eyJ1Ijoia2oxOWJsdWUiLCJhIjoiY2txeTA2YzdnMTNwNDJ1bW5rdWR4em41aSJ9.0nXYtRwfjxFt66vN_FA8sA"
 
 // Add a tile layer
 var customMap = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/512/{z}/{x}/{y}?access_token={accessToken}", {
