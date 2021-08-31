@@ -56,8 +56,6 @@ d3.json('hostsData.json').then((importedData) => {
 
   };
   
-  console.log(summerMarkers);
-  
   // Create overlays
   var summer = L.layerGroup(summerMarkers);
   var winter = L.layerGroup(winterMarkers);
