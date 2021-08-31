@@ -45,12 +45,12 @@ d3.json('hostsData.json').then((importedData) => {
   for (var i = 0; i < hosts.length; i++) {
     if (hosts[i].season == "Summer") {
       summerMarkers.push (
-        L.marker([hosts[i].lat, hosts[i].lng], {icon: SummerIcon}).bindPopup("<img src='static/Images/OlympicLogo.png' class=\"center\"><h3>" + hosts[i].city + "</h3> <hr> <h4>Opening Ceremony: " + hosts[i].opening_ceremony + "</h4><h4>Closing Ceremony: " + hosts[i].closing_ceremony + "</h4>")
+        L.marker([hosts[i].lat, hosts[i].lng], {icon: SummerIcon}).bindPopup("<img src='static/Images/logo.svg' class=\"center\"><h3>" + hosts[i].city + "</h3> <hr> <h4>Opening Ceremony: " + hosts[i].opening_ceremony + "</h4><h4>Closing Ceremony: " + hosts[i].closing_ceremony + "</h4>")
         );
     }
     else {
       winterMarkers.push (
-        L.marker([hosts[i].lat, hosts[i].lng], {icon: WinterIcon}).bindPopup("<img  src='static/Images/OlympicLogo.png' class=\"center\"><h3>" + hosts[i].city + "</h3> <hr> <h4>Opening Ceremony: " + hosts[i].opening_ceremony + "</h4><h4>Closing Ceremony: " + hosts[i].closing_ceremony + "</h4>")
+        L.marker([hosts[i].lat, hosts[i].lng], {icon: WinterIcon}).bindPopup("<img  src='static/Images/logo.svg' class=\"center\"><h3>" + hosts[i].city + "</h3> <hr> <h4>Opening Ceremony: " + hosts[i].opening_ceremony + "</h4><h4>Closing Ceremony: " + hosts[i].closing_ceremony + "</h4>")
         );
     }
 
