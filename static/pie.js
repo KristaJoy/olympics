@@ -6,8 +6,7 @@ d3.json('medals.json').then((importedData) => {
   countryNames = [];
 
   for (var i = 0; i < medalsData.length; i++) {
-    if (countryNames.includes(medalsData[i].country)) {
-      
+    if (countryNames.includes(medalsData[i].country)) {   
     }
     else {
       countryNames.push(medalsData[i].country)
@@ -26,7 +25,7 @@ d3.json('medals.json').then((importedData) => {
   
   // Create a function to add medal data together
   function sumMedals(data){
-    var medalCount= {"Gold":null,"Silver":null, "Bronze":null};
+    var medalCount= {"Gold":null, "Silver":null, "Bronze":null};
    
     for (var i = 0; i < data.length; i++) {
       if (data[i].medal_type == "Gold Medal"){

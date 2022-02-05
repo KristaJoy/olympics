@@ -740,6 +740,19 @@
         "opening_ceremony": "23 July 2021",
         "season": "Summer",
         "year": 2020
+    },
+    {
+        "city": "Beijing",
+        "closing_ceremony": "20 February 2022",
+        "continent": "Asia",
+        "country": "China",
+        "index": 53,
+        "lat": "39.907",
+        "latlng": "39.90744128587787, 116.33927916754608",
+        "lng": "116.339",
+        "location": "Beijing, China",
+        "opening_ceremony": "4 February 2022",
+        "season": "Winter",
+        "year": 2022
     }
-
 ]
